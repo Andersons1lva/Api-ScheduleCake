@@ -1,6 +1,6 @@
-package com.example.scheduleCake.schedule;
+package com.example.scheduleCake.models;
 /*
- * Está classe representa a tabela do Banco de Dados.
+ * Está classe representa a tabela de login do Banco de Dados.
  * */
 
 import jakarta.persistence.*;
@@ -9,17 +9,18 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Table(name = "schedules")
-@Entity(name = "schedules")
+@Table(name = "login")
+@Entity(name = "login")
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Schedule {
+public class Login {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome_usuario;
+    private String email;
     private String senha;
+    private String salt;
 
 }
