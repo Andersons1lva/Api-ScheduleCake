@@ -21,7 +21,7 @@ public class Encomenda {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     private String numero_da_encomenda;
-    private Long cliente_id;
+    private UUID cliente_id;
     private String bolo;
     private String  massa;
     private String recheio;
