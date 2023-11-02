@@ -2,6 +2,7 @@ package com.example.scheduleCake.models;
 
 import com.example.scheduleCake.request.ClienteRequestDTO;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

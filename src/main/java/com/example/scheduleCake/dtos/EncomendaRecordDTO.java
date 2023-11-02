@@ -5,11 +5,10 @@ import com.example.scheduleCake.models.Encomenda;
 import java.util.Date;
 import java.util.UUID;
 
-public record EncomendaRecordDTO(UUID id, String numero_da_encomenda, UUID cliente_id, String bolo, String  massa,
-                                 String recheio, Date data, double valor, double sinal) {
-
+public record EncomendaRecordDTO(UUID id, String numero_da_encomenda, UUID cliente_id, String bolo, String  massa,String recheio, Date data, double valor, double sinal) {
     public EncomendaRecordDTO(Encomenda encomenda) {
-        this(encomenda.getId(), encomenda.getNumero_da_encomenda(), encomenda.getCliente_id(), encomenda.getBolo(),
-                encomenda.getMassa(), encomenda.getRecheio(), encomenda.getData(), encomenda.getValor(), encomenda.getSinal());
+        this(encomenda.getId(), encomenda.getNumero_da_encomenda(), encomenda.getCliente_id(), encomenda.getBolo(),encomenda.getMassa(), encomenda.getRecheio(), encomenda.getData(), encomenda.getValor(), encomenda.getSinal());
     }
+
 }
+

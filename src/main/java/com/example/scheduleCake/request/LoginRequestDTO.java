@@ -1,4 +1,9 @@
 package com.example.scheduleCake.request;
 
-public record LoginRequestDTO(String email, String senha) {
+import lombok.Getter;
+
+@Getter
+public class LoginRequestDTO {
+    private String email;
+    private String senha;
 }
